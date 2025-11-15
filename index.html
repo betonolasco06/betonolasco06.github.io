@@ -1,0 +1,43 @@
+<DOCTYPE html>
+    <html lang="es">
+        <head>
+            <meta cherset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial.scale=1.0">
+            <title>Carta</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body onclick="PlayAudio()">
+            <section>
+            <main>
+                <dlv class="container-letter">
+                <div class="cover"></div>
+                <span class="heart">
+                    ❤️
+                    
+                </span>
+                <p class="paper" id="mainMessage">
+            El corazón aveces puede ser fragil... pero aun asi tiene la fuerza para brillar. Asi que sonrie, Aithana, porque tu eres una estrella hermosa, y las estrellas jamas deberian de apagarse <3
+            </p>
+            <div class="letter"></div>
+        </div>
+        <div class="options">
+            <button id="open">Abrir</button>
+            <button id="close">Cerrar</button>
+        </div>
+            </main>
+            <script src="script.js"></script>
+            <audio  id="audio1"  loop> 
+                <source src="ff7.mp3" type="audio/mpeg">
+            </audio>
+
+            
+            
+            </section>
+            <script> 
+            function PlayAudio (){
+                document.getElementById("audio1").play();
+
+            }
+            </script>
+        </body>
+    </html>
